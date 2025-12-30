@@ -1,0 +1,341 @@
+/* GM Finance Header - Matching Image Design */
+.gm-header {
+  background-color: #5B1F1F;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-top-strip {
+  height: 4px;
+  background-color: #5B1F1F;
+  width: 100%;
+}
+
+.header-main {
+  background-color: #5B1F1F;
+  padding: 0;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-icon {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.logo-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #FFB300;
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+.logo-subtitle {
+  font-size: 13px;
+  font-style: italic;
+  color: #FFB300;
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  opacity: 0.95;
+  margin-top: 2px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-row-top {
+  justify-content: flex-end;
+}
+
+.nav-row-bottom {
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.btn-login-header {
+  background-color: #ffffff;
+  color: #5B1F1F;
+  border: 1px solid #ffffff;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-login-header:hover {
+  background-color: #e0e0e0;
+  color: #5B1F1F;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Login Modal */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.login-modal {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #5B1F1F;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-form {
+  padding: 24px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.modal-actions .btn {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 14px 16px;
+  }
+  
+  .nav-row {
+    gap: 16px;
+  }
+  
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 968px) {
+  .header-container {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .header-nav {
+    width: 100%;
+  }
+  
+  .nav-row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .header-actions {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .btn-login-header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+  
+  .logo-subtitle {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  
+  .logo-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .logo-section {
+    gap: 12px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  
+  .nav-row {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 12px;
+  }
+  
+  .logo-section {
+    gap: 12px;
+  }
+  
+  .nav-row {
+    gap: 8px;
+  }
+  
+  .nav-link {
+    font-size: 11px;
+  }
+}
+

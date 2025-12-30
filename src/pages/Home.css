@@ -1,0 +1,194 @@
+.home-page {
+  background: var(--secondary-light);
+}
+
+.home-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--secondary-white);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow-light);
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 16px;
+}
+
+.hero-description {
+  font-size: 16px;
+  color: var(--text-grey);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.services-section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background: var(--secondary-white);
+  padding: 32px 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow-light);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 12px;
+}
+
+.service-description {
+  font-size: 14px;
+  color: var(--text-grey);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.service-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.service-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.trust-section {
+  margin-bottom: 50px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.trust-item {
+  background: var(--secondary-white);
+  padding: 32px 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow-light);
+  text-align: center;
+}
+
+.trust-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.trust-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+}
+
+.trust-text {
+  font-size: 14px;
+  color: var(--text-grey);
+  line-height: 1.6;
+}
+
+.cta-section {
+  margin-top: 50px;
+}
+
+.cta-card {
+  background: var(--primary-navy);
+  color: var(--secondary-white);
+  padding: 48px 32px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--shadow-medium);
+}
+
+.cta-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cta-text {
+  font-size: 16px;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-description {
+    font-size: 14px;
+  }
+  
+  .services-grid,
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-card {
+    padding: 32px 20px;
+  }
+  
+  .cta-title {
+    font-size: 24px;
+  }
+}
+
