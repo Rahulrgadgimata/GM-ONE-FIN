@@ -1,0 +1,228 @@
+.main {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.welcome {
+  font-size: 16px;
+  color: #616161;
+  margin-bottom: 40px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+}
+
+.statCard h3 {
+  font-size: 18px;
+  color: #616161;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.statNumber {
+  font-size: 48px;
+  font-weight: 700;
+  color: #003366;
+  margin: 20px 0;
+}
+
+.statLink {
+  display: inline-block;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.statLink:hover {
+  text-decoration: underline;
+}
+
+.quickActions {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+}
+
+.quickActions h2 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 25px;
+}
+
+.actionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.actionCard {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+}
+
+.actionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+.actionCard h3 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.actionCard p {
+  color: #616161;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #616161;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .statsGrid,
+  .actionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Accountant Dashboard Styles */
+.documentStatusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.entityCard {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+}
+
+.entityCard h3 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.periodStatuses {
+  margin-bottom: 20px;
+}
+
+.periodStatus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.periodStatus:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.periodLabel {
+  font-weight: 500;
+  color: #424242;
+}
+
+.periodCount {
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.periodCount.complete {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.periodCount.pending {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.entityActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.uploadButton,
+.viewButton {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.uploadButton {
+  background-color: #003366;
+  color: white;
+}
+
+.uploadButton:hover {
+  background-color: #002244;
+}
+
+.viewButton {
+  background-color: #f5f5f5;
+  color: #003366;
+  border: 1px solid #003366;
+}
+
+.viewButton:hover {
+  background-color: #003366;
+  color: white;
+}
+

@@ -1,0 +1,264 @@
+.main {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #616161;
+  margin-bottom: 30px;
+}
+
+.entitiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.entityCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+}
+
+.entityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e6f2ff;
+}
+
+.entityHeader h2 {
+  font-size: 24px;
+  color: #003366;
+  margin: 0;
+}
+
+.status {
+  background: #ffc107;
+  color: #212121;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.entityDetails {
+  margin-bottom: 25px;
+}
+
+.detailRow {
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+  color: #616161;
+}
+
+.detailRow strong {
+  color: #003366;
+  margin-right: 10px;
+}
+
+.documentsSection {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.documentsSection h3 {
+  font-size: 18px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.documentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.documentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  gap: 15px;
+}
+
+.documentInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.docType {
+  font-weight: 600;
+  color: #003366;
+  font-size: 14px;
+}
+
+.docName {
+  color: #616161;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.docSize {
+  color: #999;
+  font-size: 12px;
+}
+
+.documentActions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.viewBtn,
+.downloadBtn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.viewBtn {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+
+.viewBtn:hover {
+  background-color: #0052a3;
+}
+
+.downloadBtn {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.downloadBtn:hover {
+  background-color: #218838;
+}
+
+.noDocs {
+  color: #999;
+  font-style: italic;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.approveBtn {
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.approveBtn:hover {
+  background-color: #218838;
+}
+
+.rejectSection {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.remarksInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.rejectBtn {
+  padding: 12px 30px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.rejectBtn:hover {
+  background-color: #c82333;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #616161;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .entityHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .rejectSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+

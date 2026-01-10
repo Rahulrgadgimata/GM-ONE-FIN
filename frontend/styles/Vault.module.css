@@ -1,0 +1,186 @@
+.main {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #616161;
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filterSelect,
+.filterInput {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filterSelect {
+  min-width: 200px;
+}
+
+.filterInput {
+  flex: 1;
+  min-width: 200px;
+}
+
+.entitySection {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+  margin-bottom: 30px;
+}
+
+.entityName {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.yearSection {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 3px solid #0066cc;
+}
+
+.yearTitle {
+  font-size: 20px;
+  color: #004d99;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.periodSection {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.periodTitle {
+  font-size: 16px;
+  color: #616161;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.documentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.documentCard {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.documentInfo {
+  flex: 1;
+}
+
+.documentInfo strong {
+  display: block;
+  color: #003366;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.documentInfo p {
+  color: #616161;
+  font-size: 13px;
+  margin: 5px 0;
+  word-break: break-word;
+}
+
+.documentInfo small {
+  color: #999;
+  font-size: 11px;
+}
+
+.documentActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.viewBtn,
+.downloadBtn {
+  padding: 8px 16px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.viewBtn {
+  background-color: #0066cc;
+}
+
+.viewBtn:hover {
+  background-color: #0052a3;
+}
+
+.downloadBtn:hover {
+  background-color: #004d99;
+}
+
+.emptyState,
+.noDocs {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #616161;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .documentsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .entitySection {
+    padding: 20px;
+  }
+}
+

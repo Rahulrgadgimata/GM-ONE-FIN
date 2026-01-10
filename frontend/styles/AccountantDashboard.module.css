@@ -1,0 +1,287 @@
+.main {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #003366;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.welcome {
+  color: #616161;
+  font-size: 16px;
+  margin: 0;
+}
+
+.notificationBadge {
+  background: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  color: #003366;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.entitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.entityCard {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.entityCard:hover {
+  border-color: #0066cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.entityCard.selected {
+  border-color: #003366;
+  background: #e6f2ff;
+}
+
+.entityCard h3 {
+  margin: 0 0 15px 0;
+  color: #003366;
+  font-size: 20px;
+}
+
+.entityDetails {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #616161;
+}
+
+.entityDetails div {
+  margin-bottom: 8px;
+}
+
+.entityDetails strong {
+  color: #003366;
+  margin-right: 8px;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #28a745;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.uploadForm {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 8px;
+  color: #003366;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.formGroup select {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.formGroup select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.uploadBtn {
+  padding: 12px 24px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.uploadBtn:hover:not(:disabled) {
+  background: #004d99;
+}
+
+.uploadBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.notificationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notificationItem {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 4px solid #0066cc;
+}
+
+.notificationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.notificationHeader strong {
+  color: #003366;
+}
+
+.notificationTime {
+  color: #999;
+  font-size: 12px;
+}
+
+.notificationItem p {
+  margin: 0;
+  color: #616161;
+  font-size: 14px;
+}
+
+.viewAllLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.viewAllLink:hover {
+  text-decoration: underline;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.statCard {
+  background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.statCard h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.statNumber {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 40px 20px;
+  color: #616161;
+}
+
+.emptyState p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.emptySubtext {
+  font-size: 14px;
+  color: #999;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #616161;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .entitiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}

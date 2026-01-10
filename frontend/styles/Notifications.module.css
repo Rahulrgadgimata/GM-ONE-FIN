@@ -1,0 +1,175 @@
+.main {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #003366;
+  font-weight: 600;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.filterSelect {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.markAllBtn {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.markAllBtn:hover {
+  background-color: #004d99;
+}
+
+.notificationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notificationItem {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+  transition: box-shadow 0.3s;
+}
+
+.notificationItem:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.notificationItem.unread {
+  border-left: 4px solid #0066cc;
+  background: #e6f2ff;
+}
+
+.notificationContent {
+  width: 100%;
+}
+
+.notificationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+.notificationTitle {
+  font-size: 18px;
+  color: #003366;
+  margin: 0;
+  font-weight: 600;
+  flex: 1;
+}
+
+.markReadBtn {
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.markReadBtn:hover {
+  background-color: #004d99;
+}
+
+.notificationMessage {
+  color: #616161;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.notificationMeta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.notificationType {
+  background: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #616161;
+  text-transform: capitalize;
+}
+
+.notificationDate {
+  color: #999;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #616161;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .filterSelect,
+  .markAllBtn {
+    width: 100%;
+  }
+}
+
